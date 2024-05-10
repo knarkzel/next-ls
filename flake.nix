@@ -177,6 +177,7 @@
             rm -rf "$out/bin"
             mv "$out/burrito_out" "$out/bin"
             mv "$out/bin/next_ls_${burritoExe.${system}}" "$out/bin/nextls"
+            patchelf --set-interpreter ${muslPkg}/${rawmusl.file} "$out/bin/nextls"
           '';
 
           meta = with lib; {
