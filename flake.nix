@@ -177,8 +177,8 @@
             rm -rf "$out/bin"
             mv "$out/burrito_out" "$out/bin"
             mv "$out/bin/next_ls_${burritoExe.${system}}" "$out/bin/nextls"
-            mkdir -p "$out/erts-14.2.4/bin"
-            cp -r $out/releases/0.21.4/* "$out/erts-14.2.4/bin"
+            mkdir -p "$out/erts-14.2.5/bin"
+            cp -r $out/releases/0.21.4/* "$out/erts-14.2.5/bin"
           '';
 
           meta = with lib; {
